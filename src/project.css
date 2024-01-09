@@ -1,0 +1,112 @@
+.work__swip{
+    width: 90vw;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.swp__navbtn{
+    color: #04ccbb;
+    transition: color 0.03s ease;
+}
+.swp__navbtn:hover{
+    color: #333333;
+}
+
+.work__body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #03a9f4;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.container .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.09);
+    transition: 0.5s;
+}
+
+.container .card:hover{
+    height: 400px;
+    box-shadow: 0 15px 45px rgba(1, 166, 182, 0.29);
+}
+.container .card .imgBx{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333333  ;
+    border-radius: 12px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.container .card:hover .imgBx{
+    top: -100px;
+    mso-page-scale: 0.75;
+    box-shadow: 0 15px 45px rgb(122, 122, 122);
+
+}
+.container .card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .card .content{
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+.container .card:hover .content{
+    top: 130px;
+    height: 250px;
+}
+.container .card .content h2{
+    font-size: 14px;
+    font-weight: 700;
+    color: #0ca897;
+}
+.container .card .content p{
+    font-size: 12px;
+    color: #333;
+
+}
+.container .card .content a{
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: #04ccbb;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.container .card .content a:hover {
+    color: #0D1730;
+    background: #0ca897;
+}
